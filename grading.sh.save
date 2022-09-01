@@ -1,0 +1,16 @@
+#display grading system
+#!/bin/bash
+while :; do
+read -p "Enter the person's name: " name
+read -p "Enter the grade of the person: " grade
+
+case $grade in
+[50-59]) echo "$name $grade F";;
+[60-69]) echo "$name $grade C";;
+[70-79]) echo "$name $grade B";;
+[80-100]) echo "$name $grade A";;
+*) echo "Wrong input"
+
+esac
+done
+echo "Goodbye"
